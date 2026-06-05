@@ -1,7 +1,8 @@
-<!DOCTYPE html>
-<!-- saved from url=(0042)file:///C:/Users/USER/Downloads/index.html -->
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>사내 툴킷 — 로그인</title>
 <style>
@@ -123,7 +124,7 @@
   <div class="logo">
     <div class="logo-icon">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <rect x="2" y="3" width="20" height="14" rx="2"></rect><path d="M8 21h8M12 17v4"></path>
+        <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
       </svg>
     </div>
     <div>
@@ -137,10 +138,10 @@
 
   <label for="pw">비밀번호</label>
   <div class="input-wrap">
-    <input type="password" id="pw" placeholder="비밀번호 입력" autocomplete="current-password" onkeydown="if(event.key===&#39;Enter&#39;)doLogin()">
+    <input type="password" id="pw" placeholder="비밀번호 입력" autocomplete="current-password" onkeydown="if(event.key==='Enter')doLogin()">
     <button class="eye-btn" onclick="toggleEye()" id="eye-btn" type="button" aria-label="비밀번호 표시/숨기기">
       <svg id="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle>
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
       </svg>
     </button>
   </div>
@@ -189,6 +190,5 @@ if(sessionStorage.getItem('toolkit_auth')==='1'){
   window.location.href='tools.html';
 }
 </script>
-
-
-</body></html>
+</body>
+</html>
